@@ -1,0 +1,149 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?donation,healthcare') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-custom {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+.info-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.info-section h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.enquiry-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.enquiry-form h4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.enquiry-form .btn-primary {
+    background-color: #28a745;
+    border: none;
+}
+
+.enquiry-form .btn-primary:hover {
+    background-color: #218838;
+}
+/* image donation */
+.enquiry-form {
+    position: relative;
+    padding: 30px;
+}
+
+.enquiry-form .image-column {
+    position: relative;
+}
+
+.enquiry-formn .image-column .text-layer {
+    position: absolute;
+    right: -110px;
+    top: 50%;
+    font-size: 325px;
+    line-height: 1em;
+    color: #ffffff;
+    margin-top: -175px;
+    font-weight: 500;
+}
+
+.enquiry-form .image-column .inner-column {
+    position: relative;
+    padding-left: 120px;
+    padding-bottom: 125px;
+}
+
+.enquiry-form .image-column .inner-column:before {
+    position: absolute;
+    left: -75px;
+    top: 65px;
+    height: 520px;
+    width: 520px;
+    background-image: url(https://i.ibb.co/fxJ1jtC/about-circle-1.png);
+    content: "";
+}
+
+.enquiry-form .image-column .image-1 {
+    position: relative;
+}
+
+.enquiry-form .image-column .image-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.enquiry-form .image-column .image-2 img,
+.enquiry-form .image-column .image-1 img {
+    box-shadow: 0 30px 50px rgba(8, 13, 62, .15);
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-oelNYjY1PQyJj5F3FZ0H2FOEJ6HBn/3UoKA3DO+lbkLsO3bJb6+/SAWXg6ivA5bh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <link
+        href="../../../../css2-1?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="donation.css">
+</head>
+
+<body>
+    <!-- Header -->
+  <header class="fixed-top">
+        <div class="container">
+            <div class="logo__menu d-flex justify-content-between align-items-center py-2">
+                <div class="logo d-flex align-items-center">
+                    <a class="logo__NJB" href="index.html">
+                        <img src="assets/img/charitylogo.jpg" alt="Chikitsa Life">
+                    </a>
+                    <span class="text-primary logo-text">
+                        Managed By: <br>
+                        <span class="fw-bold">Ayush Wealth Foundation</span><br>
+                        (A Public Charitable Trust)
+                    </span>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <button class="btn btn-primary d-lg-none" id="menu-toggle">&#9776;</button>
+
+                <!-- Desktop Navbar -->
+                <nav class="navbar navbar-expand-md d-none d-lg-block">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="equipment.html">Equipment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="community.html">Community</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="Donation.html">Donation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactus.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <span class="close-btn" id="close-sidebar">&times;</span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="Donation.html">Donation</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- about navigation -->
+    <section class="navigation">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Donation</li>
+                </ol>
+            </nav>
+            <h2 class="mb-0 text-center">Donation</h2>
+        </div>
+    </section>
+
+    <!--  Donation-section -->
+
+
+
+    <!-- <div class="container my-5">
+        <section class="hero-section fade-in">
+            <h1>Your Support Saves Lives</h1>
+            <p>Every contribution helps us deliver better healthcare to those in need. Join us in making a difference
+                today.</p>
+            <button class="btn-custom">Donate Now</button>
+        </section>
+
+        <section class="info-section fade-in">
+            <h3>Where Your Donations Go</h3>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card info-card">
+                        <img src="https://source.unsplash.com/300x200/?medical,equipment" class="card-img-top"
+                            alt="Medical Equipment">
+                        <div class="card-body">
+                            <p class="card-text">Funding critical medical equipment to enhance patient care.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card info-card">
+                        <img src="https://source.unsplash.com/300x200/?hospital,community" class="card-img-top"
+                            alt="Community Programs">
+                        <div class="card-body">
+                            <p class="card-text">Supporting community health initiatives and outreach programs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card info-card">
+                        <img src="https://source.unsplash.com/300x200/?healthcare,patients" class="card-img-top"
+                            alt="Patient Care">
+                        <div class="card-body">
+                            <p class="card-text">Providing compassionate care for patients in need.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div> -->
+
+
+<!-- jhjjjjjjjjjjjjjjjjjjjjjj -->
+<section class="about-section bg-dark">
+    <section class="about-section">
+        <div class="container">
+            <div class="row">                
+                <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+                    <div class="inner-column">
+                        <!-- Form Section -->
+                        <form action="" class="d-flex align-items-center justify-content-center">
+                            <div class="row d-flex align-items-center justify-content-between">
+                                <div class="col-lg-6 col-6 py-3 d-flex align-items-center justify-content-center">
+                                    <div class="communitycontainer">
+                                        <input required="" type="text" name="text" class="input">
+                                        <label class="label"> Name</label>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                <div class="col-lg-6 col-6 py-3 d-flex align-items-center justify-content-center">
+                                    <div class="communitycontainer">
+                                        <input required="" type="tel" name="text" class="input">
+                                        <label class="label">Mobile No.</label>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="col-lg-6 col-6 py-3 d-flex align-items-center justify-content-center">
+                                    <div class="communitycontainer">
+                                        <input required="" type="mail" name="text" class="input">
+                                        <label class="label">Email</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-6 col-6 py-3 d-flex align-items-center justify-content-center">
+                                    <div class="communitycontainer">
+                                        <input required="" type="text" name="text" class="input">
+                                        <label class="label">Address</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-12 py-3 d-flex align-items-center justify-content-center">
+                                    <div class="communitycontainer ">
+                                        <textarea name="message" id="messagepart" placeholder="plz enter message" class="input"></textarea>
+                                    </div>
+                                   
+                                </div>
+                                <div class="col-lg-12 pt-5 d-flex align-items-center justify-content-center">
+                                    <input required="" type="submit" name="text" class="input">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+      
+                <!-- Image Column -->
+                <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-column wow fadeInLeft">
+                        <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images"><img src="assets/img/doct2.jpg" style="height: 390px;" alt="" ></a></figure>
+                        <figure class="image-2"><a href="#" class="lightbox-image" data-fancybox="images"><img src="assets/img/benjin2.jpg" style="height: 321px;" alt=""></a></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  </section>
+
+  <style>
+    /* about*/
+a,
+a:hover,
+a:focus,
+a:active {
+text-decoration: none;
+outline: none;
+}
+
+a,
+a:active,
+a:focus {
+color: #6f6f6f;
+text-decoration: none;
+transition-timing-function: ease-in-out;
+-ms-transition-timing-function: ease-in-out;
+-moz-transition-timing-function: ease-in-out;
+-webkit-transition-timing-function: ease-in-out;
+-o-transition-timing-function: ease-in-out;
+transition-duration: .2s;
+-ms-transition-duration: .2s;
+-moz-transition-duration: .2s;
+-webkit-transition-duration: .2s;
+-o-transition-duration: .2s;
+}
+
+ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+/* section {
+padding: 60px 0;
+min-height: 100vh;
+} */
+
+.sec-title {
+position: relative;
+z-index: 1;
+margin-bottom: 60px;
+}
+
+.sec-title .title {
+position: relative;
+display: block;
+font-size: 18px;
+line-height: 24px;
+/* color: #ff2222; */
+color: #F76621;
+font-weight: 500;
+margin-bottom: 15px;
+}
+
+.sec-title h2 {
+position: relative;
+display: block;
+font-size: 40px;
+line-height: 1.28em;
+color: #222222;
+font-weight: 600;
+padding-bottom: 18px;
+}
+
+.sec-title h2:before {
+position: absolute;
+content: '';
+left: 0px;
+bottom: 0px;
+width: 50px;
+height: 3px;
+background-color: #d1d2d6;
+}
+
+.sec-title .text {
+position: relative;
+font-size: 16px;
+line-height: 26px;
+color: #848484;
+font-weight: 400;
+margin-top: 35px;
+}
+
+.sec-title.light h2 {
+color: #ffffff;
+}
+
+.sec-title.text-center h2:before {
+left: 50%;
+margin-left: -25px;
+}
+
+.list-style-one {
+position: relative;
+}
+
+.list-style-one li {
+position: relative;
+font-size: 16px;
+line-height: 26px;
+color: #222222;
+font-weight: 400;
+padding-left: 35px;
+margin-bottom: 12px;
+}
+
+.list-style-one li:before {
+content: "\f058";
+position: absolute;
+left: 0;
+top: 0px;
+display: block;
+font-size: 18px;
+padding: 0px;
+color: #F76621;
+font-weight: 600;
+-moz-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+font-style: normal;
+font-variant: normal;
+text-rendering: auto;
+line-height: 1.6;
+font-family: "Font Awesome 5 Free";
+}
+
+.list-style-one li a:hover {
+color: #44bce2;
+}
+
+.btn-style-one {
+position: relative;
+display: inline-block;
+font-size: 17px;
+line-height: 30px;
+color: #ffffff;
+padding: 10px 30px;
+font-weight: 600;
+overflow: hidden;
+letter-spacing: 0.02em;
+background-color: #F76621;
+}
+
+.btn-style-one:hover {
+background-color: #046738;
+color: #ffffff;
+}
+
+.about-section {
+position: relative;
+/* padding: 120px 0 70px; */
+padding: 30px;
+}
+
+.about-section .sec-title {
+margin-bottom: 45px;
+}
+
+
+
+.about-section .text {
+margin-bottom: 40px;
+font-size: 16px;
+line-height: 26px;
+color: #848484;
+font-weight: 400;
+}
+
+.about-section .list-style-one {
+margin-bottom: 45px;
+}
+
+.about-section .btn-box {
+position: relative;
+}
+
+.about-section .btn-box a {
+padding: 15px 50px;
+}
+
+.about-section .image-column {
+position: relative;
+}
+
+.about-section .image-column .text-layer {
+position: absolute;
+right: -110px;
+top: 50%;
+font-size: 325px;
+line-height: 1em;
+color: #ffffff;
+margin-top: -175px;
+font-weight: 500;
+}
+
+.about-section .image-column .inner-column {
+position: relative;
+padding-left: 120px;
+padding-bottom: 125px;
+}
+
+
+
+.about-section .image-column .image-1 {
+position: relative;
+}
+
+.about-section .image-column .image-2 {
+position: absolute;
+left: 0;
+bottom: 0;
+}
+
+.about-section .image-column .image-2 img,
+.about-section .image-column .image-1 img {
+box-shadow: 0 30px 50px rgba(8, 13, 62, .15);
+border-radius: 10px;
+}
+
+</style>
+
+   
+
+
+
+
+
+    <!-- footer -->
+      <footer class="pt-5">
+
+        <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100"
+            preserveAspectRatio="none" style="transform: scaleY(1);">
+            <path class="footer-wave-path"
+                d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z" fill="white">
+            </path>
+        </svg>
+
+        <div class="container pt-5">
+            <div class="row gy-4 pt-5">
+                <div class="col-lg-5 col-md-4 col-sm-6 col-6 text-center text-lg-start">
+                    <a class="logo__NJB" href="index.html">
+                        <img src="assets/img/charitylogo.jpg" alt="Chikitsa Life">
+                    </a>
+                    <p class="opacity-100 mt-3">
+                        Managed By:<br>
+                        <span class="fw-bold">Ayush Wealth Foundation</span><br>
+                        (A Public Charitable Trust)
+                    </p>
+                    <!-- socila -->
+                    
+            
+  
+  
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center text-lg-start">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled other_list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="equipment.html">Equipments</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="Donation.html">Donation</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12  text-lg-start">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled contact_link  text-lg-start">
+                        <li><a href="#">East Punjabi Bagh, Delhi.</a></li>
+                        <li><a href="tel:+918630992788">+91 8630992788</a></li>
+                    </ul>
+                    <div class="cardsocial  text-lg-start ">
+                        <a class="socialContainer containerOne" href="#">
+                          <svg viewBox="0 0 16 16" class="socialSvg instagramSvg"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
+                        </a>
+                        
+                        <a class="socialContainer containerTwo" href="#">
+                          <svg viewBox="0 0 16 16" class="socialSvg twitterSvg"> <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path> </svg>              </a>
+                          
+                        <a class="socialContainer containerThree" href="#">
+                          <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                        </a>
+                        
+                        <a class="socialContainer containerFour" href="#">
+                          <svg viewBox="0 0 16 16" class="socialSvg whatsappSvg"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> </svg>
+                        </a>
+                      </div> 
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class=" text-white py-3">
+            <p class="text-center mb-0">© 2025 Ayush Wealth Foundation | All Rights Reserved. Designed by 
+                <a href="https://tssgtech.com" class="text-warning">TSSG-Tech</a>
+            </p>
+        </div>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-3VbKpBtFUWj1WXHMaOyeo3lbNLjC9P8V6MF6V6OP2KAEBHVk5FFv1O4IcBq2xlO6"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

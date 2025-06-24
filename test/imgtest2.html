@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+a,
+a:active,
+a:focus {
+  color: #6f6f6f;
+  text-decoration: none;
+  transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-duration: .2s;
+  -ms-transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
+}
+
+
+    .enquiry-form {
+    position: relative;
+    padding: 30px;
+}
+
+.enquiry-form .image-column {
+    position: relative;
+}
+
+.enquiry-formn .image-column .text-layer {
+    position: absolute;
+    right: -110px;
+    top: 50%;
+    font-size: 325px;
+    line-height: 1em;
+    color: #ffffff;
+    margin-top: -175px;
+    font-weight: 500;
+}
+
+.enquiry-form .image-column .inner-column {
+    position: relative;
+    padding-left: 120px;
+    padding-bottom: 125px;
+}
+
+.enquiry-form .image-column .inner-column:before {
+    position: absolute;
+    left: -75px;
+    top: 65px;
+    height: 520px;
+    width: 520px;
+    background-image: url(https://i.ibb.co/fxJ1jtC/about-circle-1.png);
+    content: "";
+}
+
+.enquiry-form .image-column .image-1 {
+    position: relative;
+}
+
+.enquiry-form .image-column .image-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.enquiry-form .image-column .image-2 img,
+.enquiry-form .image-column .image-1 img {
+    box-shadow: 0 30px 50px rgba(8, 13, 62, .15);
+}
+
+</style>
+</head>
+<body>
+    
+
+
+    <div class="enquiry-form bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="inner-column wow fadeInLeft">
+                        <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images"><img src="https://cdn.pixabay.com/photo/2023/03/15/20/46/background-7855413_640.jpg" alt="" style="width: 321px;height: 390px;"></a></figure>
+                        <figure class="image-2"><a href="#" class="lightbox-image" data-fancybox="images"><img src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="" style="width: 270px;height: 270px;"></a></figure>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex d-flex align-items-center justify-content-between py-5">
+                    <form action="" class="d-flex align-items-center justify-content-center">
+                        <div class="row d-flex align-items-center justify-content-between">
+                            <div class="col-lg-6 col-6 py-3 d-flex align-items-center justify-content-center">
+                                <div class="communitycontainer">
+                                    <input required="" type="text" name="text" class="input">
+                                    <label class="label">First Name</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-6 py-3 d-flex align-items-center justify-content-center">
+                                <div class="communitycontainer">
+                                    <input required="" type="text" name="text" class="input">
+                                    <label class="label">Last Name</label>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="col-lg-6 col-6 py-3 d-flex align-items-center justify-content-center">
+                                <div class="communitycontainer">
+                                    <input required="" type="tel" name="text" class="input">
+                                    <label class="label">Mobile No.</label>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="col-lg-6 col-6 py-3 d-flex align-items-center justify-content-center">
+                                <div class="communitycontainer">
+                                    <input required="" type="text" name="text" class="input">
+                                    <label class="label">City</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-6 py-3 d-flex align-items-center justify-content-center">
+                                <div class="communitycontainer ">
+                                    <select id="Profession" class="form-select" fdprocessedid="0w6gx">
+                                        <option value="0">Select</option>
+                                        <option value="Govt Job">Govt Job</option>
+                                        <option value="Private Job">Private Job</option>
+                                        <option value="Businessman">Businessman</option>
+                                        <option value="Farmer">Farmer</option>
+                                        <option value="Politician">Politician</option>
+                                        <option value="Unemployed">Unemployed</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                    <!-- <label class="label">Profession</label> -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-6 py-3 d-flex align-items-center justify-content-center">
+                                <div class="communitycontainer">
+                                    <input required="" type="text" name="text" class="input">
+                                    <label class="label">Address</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-12 py-3 d-flex align-items-center justify-content-center">
+                                <div class="communitycontainer ">
+                                    <textarea name="message" id="messagepart" placeholder="plz enter message" class="input"></textarea>
+                                </div>
+                               
+                            </div>
+                            <div class="col-lg-12 pt-5 d-flex align-items-center justify-content-center">
+                                <input required="" type="submit" name="text" class="input">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
