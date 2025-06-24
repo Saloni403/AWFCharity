@@ -504,7 +504,7 @@ footer {
     position: relative;
     padding-top: 2rem;
  /* background: linear-gradient(to right, #1e2a38, #3b4a66, #1e2a38); */
-background: linear-gradient(to right, rgba(30, 42, 56, 0.95), rgba(59, 74, 102, 0.95), rgba(30, 42, 56, 0.95));
+background: linear-gradient(to right, rgba(38, 60, 131, 0.95), rgba(59, 74, 102, 0.95),  rgba(38, 60, 131, 0.95));
 
 
     /* background: #e1e7fb; */
