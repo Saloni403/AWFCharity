@@ -503,7 +503,11 @@ object-position: bottom;
 footer {
     position: relative;
     padding-top: 2rem;
-    background: #243c84;
+ /* background: linear-gradient(to right, #1e2a38, #3b4a66, #1e2a38); */
+background: linear-gradient(to right, rgba(30, 42, 56, 0.95), rgba(59, 74, 102, 0.95), rgba(30, 42, 56, 0.95));
+
+
+    /* background: #e1e7fb; */
     color: #fff;
     overflow: hidden;
 }
