@@ -85,7 +85,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem;
+    /* padding: 0.5rem 1rem; */
 }
 
 .logo__menu img {
@@ -93,15 +93,14 @@ header {
 }
 
 header .logo-text {
-    width: 300px;
+    width: fit-content;
     margin-left: 1rem;
     font-size: 14px;
     line-height: 1.5;
+    color: navy;
+
 }
 
-.text-primary {
-    color: #263c83 !important;
-}
 
 /* Navbar */
 .navbar-nav .nav-link {
@@ -118,7 +117,7 @@ header .logo-text {
     transform-origin: center;
     width: 100%;
     height: 2px;
-    background-color: #0043ff;
+    background-color: navy;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -134,7 +133,7 @@ header .logo-text {
     left: 0;
     height: 100%;
     width: 250px;
-    background-color: #0043ff;
+    background-color: navy;
     color: #ffffff;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
@@ -145,13 +144,18 @@ header .logo-text {
 .sidebar.show {
     transform: translateX(0);
 }
-
+.sidebar ul{
+padding: 0;
+}
 .sidebar a {
     color: #ffffff;
     display: block;
-    margin: 10px 0;
+    /* margin: 10px 0; */
     font-size: 18px;
+    text-decoration: none;
+line-height: 4;
 }
+
 
 .sidebar .close-btn {
     font-size: 24px;
@@ -187,8 +191,9 @@ header .logo-text {
     }
 
     .logo-text {
-        font-size: 12px;
-        width: auto;
+        margin-left: 0.5rem !important;
+        font-size: 12px !important;
+        /* width: auto; */
     }
 
     .sidebar {
@@ -208,7 +213,7 @@ header .logo-text {
 
 img {
     max-width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 
 @media (max-width:450px) {
@@ -217,6 +222,10 @@ img {
     }
 }
 /* hero section */
+.badge{
+    background-color: navy;
+    padding: 5px !important; ;
+}
 .imgslid{
     height: 500px;
 
@@ -325,6 +334,11 @@ object-position: bottom;
 }
 
 /* Hover Effect for Cardd */
+@media(max-width:500px){
+    .cardd .content{
+        padding: 0 !important;
+    }
+}
 .cardd {
     height: 254px;
     background: #171717;
@@ -502,9 +516,9 @@ object-position: bottom;
 /* Footer */
 footer {
     position: relative;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
  /* background: linear-gradient(to right, #1e2a38, #3b4a66, #1e2a38); */
-background: linear-gradient(to right, rgba(38, 60, 131, 0.95), rgba(59, 74, 102, 0.95),  rgba(38, 60, 131, 0.95));
+background: linear-gradient(to right, rgba(189, 75, 75, 0.95));
 
 
     /* background: #e1e7fb; */
@@ -549,7 +563,7 @@ footer img {
 footer p {
     margin: 1rem 0;
     font-size: 14px;
-    color: #d1d1d1;
+    color: #fff;
 }
 
 footer h5 {
@@ -558,7 +572,7 @@ footer h5 {
     margin-bottom: 1rem;
     text-transform: uppercase;
     color: #fff;
-    border-bottom: 3px solid #bd4b4b;
+   border-bottom: 2px solid navy;
     display: inline-block;
     padding-bottom: 0.5rem;
 }
@@ -627,7 +641,7 @@ footer .text-center {
 @media (max-width: 767px) {
     footer h5 {
         font-size: 16px;
-        border-bottom-width: 2px;
+      
     }
 
     footer ul a {
@@ -714,9 +728,9 @@ footer .text-center {
     padding: 0px 0 80px;
 }
 
-.about-team-sec {
+/* .about-team-sec {
     padding: 50px 0 80px;
-}
+} */
 
 .about-team-box {
     max-width: 270px;
@@ -991,13 +1005,14 @@ input:nth-child(10):hover {
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    width: 500px;
+    width: 400px;
     height: 70px;
     padding: 10px;
     font-size: 20px;
     font-weight: 500;
-
   }
+
+
 
 @media (max-width:1200px) {
     form {
@@ -1368,7 +1383,8 @@ height: 320px;
 .hero-section .hero-text h1 {
     font-size: 3rem;
     font-weight: 700;
-    color: #2c3e50;
+    /* color: #2c3e50; */
+    color: 000;
 }
 
 .hero-section .hero-text p {
@@ -1386,10 +1402,13 @@ height: 320px;
 }
 
 .stats-box {
-    border-left: 2px solid #007bff;
+    border-left: 2px solid #bd4b4bf2;
     padding-left: 20px;
 }
 
+.stats-box h4{
+    color: #bd4b4bf2;
+}
 
 
 .play-button {

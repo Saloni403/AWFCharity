@@ -147,3 +147,17 @@ body {
 .enquiry-form .image-column .image-1 img {
     box-shadow: 0 30px 50px rgba(8, 13, 62, .15);
 }
+
+@media (max-width:768px){
+    .image-2{
+        display: none;
+    }
+    .about-section .image-column .inner-column{
+        padding-left: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .about-section{
+        padding: 5px !important;
+      
+    }
+}
